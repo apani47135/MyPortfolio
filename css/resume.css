@@ -147,3 +147,34 @@ a:focus,
 a:active {
   color: #824027;
 }
+
+.project-container {
+  display: flex;
+  gap: 2%;
+  @media (max-width: 767px) {
+    flex-direction: column;
+  }
+}
+
+.project-desc {
+  @media (max-width: 767px) {
+    order: 2;
+  }
+}
+
+.project-img {
+  display: flex;
+
+  img {
+    max-width: 60vw;
+    max-height: 25rem;
+    border-radius: 8%;
+    border: solid rgba(0, 0, 0, 0.596);
+    padding: 1%;
+  }
+
+  @media (max-width: 767px) {
+    justify-content: center;
+    order: 1;
+  }
+}
